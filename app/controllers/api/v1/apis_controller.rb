@@ -1,6 +1,6 @@
 class Api::V1::ApisController < ApplicationController
 	
-	 before_action :authenticate
+	# before_action :authenticate
   # around_action :set_time_zone
 
   helper_method :current_user
