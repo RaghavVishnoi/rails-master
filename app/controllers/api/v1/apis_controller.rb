@@ -1,6 +1,11 @@
 class Api::V1::ApisController < ApplicationController
 	
-	
+	 before_action :authenticate
+  # around_action :set_time_zone
+
+  helper_method :current_user
+
+
 private
   def set_time_zone(&block)
     if current_user
